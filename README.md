@@ -1,4 +1,4 @@
-# IndiGlam Website
+# IndiGlam
 
 Welcome to the GitHub repository for the IndiGlam website. IndiGlam is your premier destination for authentic and stylish ethnic Indian dresses. This repository contains the source code and assets for our website.
 
