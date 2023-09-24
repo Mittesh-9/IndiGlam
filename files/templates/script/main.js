@@ -14,10 +14,15 @@ function displayDresses() {
         dressElement.classList.add("dress");
         dressElement.innerHTML = `
             <h3>${dress.name}</h3>
+            `;
             <p>Price: ${dress.price}</p>
-        `;
         dressesSection.appendChild(dressElement);
     });
+}
+
+function navigateToPage(pageUrl) {
+    // Set the current pages url to the clicked page URL
+    window.location.href = pageUrl;
 }
 
 displayDresses();
