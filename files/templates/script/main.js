@@ -21,7 +21,7 @@ function displayDresses() {
 }
 
 function navigateToPage(pageUrl) {
-    // Set the current pages url to the clicked page URL
+    // set the current pages url to the clicked page URL
     window.location.href = pageUrl;
 }
 

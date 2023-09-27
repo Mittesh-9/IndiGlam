@@ -1,14 +1,14 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Garamond', serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
-    /* background-image: linear-gradient(to top ,#cc7654, #FFDAB9, #FFDAB9); */
     background-color: #FFDEE9;
 background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 header {
-    font-family: Garamond, serif;
+    font-family: 'Garamond', serif;
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -38,14 +38,11 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    text-align: center;
     color: #000000;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Garamond', serif;
     font-size: 20px;
-    font-weight: bold;
-    margin-right: 40px;
-    margin-left: 50px;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 section {
@@ -53,11 +50,42 @@ section {
     text-align: left;
 }
 
+p {
+    position: relative; /* Position the text absolutely within the container */
+    top: 0; /* Align text to the top of the container */
+    left: 0; /* Align text to the left of the container */
+    background-color:linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    padding: 10px; /* Add padding for readability */
+}
+
+img {
+    width: 8cm;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 15px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* this makes sure the hover effect doesnt overflow */
+}
+
+
+.image-container:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.hover-effect {
+    /* You can remove this block if it's not being used for other purposes */
+}
+
 footer {
     color: #373030;
     text-align: center;
+    position: flex;
+    /* position: fixed; > this changes the footer to be shown at the fixed position and shows it at that place even when we scroll up or down */
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
