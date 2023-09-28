@@ -79,9 +79,8 @@ img {
 
 .image-container {
     position: relative;
-    overflow: hidden; /* this makes sure the hover effect doesnt overflow */
+     overflow: hidden; /*this makes sure the hover effect doesnt overflow */
 }
-
 
 .image-container:hover img {
     transform: scale(1.2);
