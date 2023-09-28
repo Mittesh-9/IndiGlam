@@ -1,0 +1,15 @@
+<section id="dresses">
+        <h2>Our Dresses</h2>
+        <!-- display dresses here -->
+
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to IndiGlam, your premier destination for authentic and stylish ethnic Indian dresses. At IndiGlam, we are dedicated to celebrating the beauty, diversity, and cultural richness of Indian fashion.
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- add contact details -->
+    </section>
+
