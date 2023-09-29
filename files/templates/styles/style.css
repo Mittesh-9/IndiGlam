@@ -7,28 +7,16 @@ body {
 background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
-/* Combine these both to get the proper hover effect on the image */
-
-/* body {
-    height: 100%;
-    position: center;
-    margin: 20%;
-    padding: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 header {
     font-family: 'Garamond', serif;
     color: #fff;
-    padding: 40px 0;
+    padding: 38px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 85px;
+    font-size: 80px;
     background-color: #333 ;
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,6 +58,7 @@ p {
     padding: 10px; /* Add padding for readability */
 }
 
+
 img {
     width: 8cm;
     height: auto;
@@ -77,14 +66,12 @@ img {
     padding: 15px;
 }
 
-.image-container {
-    position: relative;
-     overflow: hidden; /*this makes sure the hover effect doesnt overflow */
-}
-
-.image-container:hover img {
+/* Style for the image when hovered */
+img:hover {
     transform: scale(1.2);
     opacity: 1;
+    position: relative;
+    overflow: hidden;
 }
 
 footer {
