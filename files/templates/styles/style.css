@@ -46,6 +46,7 @@ nav ul li a {
 }
 
 section {
+    margin-top: -60px;
     padding: 40px;
     text-align: center;
 }
@@ -59,10 +60,17 @@ p {
 }
 
 
+.image-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+}
+
 img {
     width: 8cm;
     height: auto;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
     padding: 15px;
 }
 
@@ -72,6 +80,26 @@ img:hover {
     opacity: 1;
     position: relative;
     overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between;
+}
+
+ /* style for the navigation buttons */
+.slider-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.prev, .next {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
 footer {
