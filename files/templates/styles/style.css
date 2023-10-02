@@ -68,10 +68,12 @@ p {
 }
 
 img {
-    width: 8cm;
+    width: 20%;
     height: auto;
     transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
     padding: 15px;
+    margin: 20px; /* adds space between images */
+    /* z-index: 1; makesure you have higher z in dex than the arrows */
 }
 
 /* Style for the image when hovered */
@@ -79,7 +81,7 @@ img:hover {
     transform: scale(1.2);
     opacity: 1;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; This was causing the flickering and overlapping of the images  */
 }
 
 .slider {
@@ -105,7 +107,7 @@ img:hover {
 footer {
     color: #373030;
     text-align: center;
-    position: flex;
+    /* position: flex; */
     /* position: fixed; > this changes the footer to be shown at the fixed position and shows it at that place even when we scroll up or down */
     padding: 10px 0;
     bottom: 0;
