@@ -53,4 +53,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+// cart function To be corrected
+
+const cartButtons = document.querySelectorAll(".cart button");
+
+cartButtons.forEach(button => {
+  button.addEventListener("click", cartClick);
+});
+
+// Cartclick function
+function cartClick() {
+  let button = this;
+  button.classList.add("clicked");
+}
+
 displayDresses();

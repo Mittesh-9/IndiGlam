@@ -14,7 +14,7 @@
     </section>
 
 previous css image hover snippet in case in future you want to go back
-/* img {
+img {
     width: 8cm;
     height: auto;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -29,4 +29,4 @@ previous css image hover snippet in case in future you want to go back
 /* .image-container:hover img {
     transform: scale(1.2);
     opacity: 1;
-} */ 
+}
