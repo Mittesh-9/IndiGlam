@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>IndiGlam - Contact</title>
+    <title>IndiGlam - Dresses</title>
 
     <link
       rel="shortcut icon"
@@ -13,122 +13,23 @@
     />
 
     <style>
-      body {
-        font-family: "Garamond", serif;
-        font-weight: 600;
-        margin: 0;
-        padding: 0;
-        background-color: #ffdee9;
-        background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+      /*css styles for the dress menu*/
+      .dress-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 20px;
       }
 
-      header {
-        font-family: "Garamond", serif;
-        color: #fff;
-        padding: 38px 0;
+      .dress-item {
+        position: relative; /*makes positioning easier*/
         text-align: center;
       }
 
-      header h1 {
-        margin: 0;
-        font-size: 80px;
-        background-color: #333;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .cart {
-        float: right;
-      }
-
-      nav ul li {
-        display: inline;
-        margin-right: 20px;
-      }
-
-      nav ul li a {
-        color: #000000;
-        font-family: "Garamond", serif;
-        font-size: 20px;
-        text-decoration: none;
-        padding: 10px 20px;
-      }
-
-      section {
-        margin-top: -60px;
-        padding: 40px;
-        text-align: center;
-      }
-
-      p {
-        position: relative;
-        font-size: large;
-        top: 0;
-        left: 0;
-        background-color: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
-        padding: 10px;
-      }
-
-      .contact-info {
-        text-align: left;
-        margin-top: 20px;
-      }
-
-      .contact-info ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .contact-info li {
-        margin-bottom: 10px;
-      }
-
-      .contact-form {
-        text-align: left;
-        margin-top: 20px;
-      }
-
-      .contact-form label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .contact-form input[type="text"],
-      .contact-form input[type="email"],
-      .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      .contact-form button {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .contact-form button:hover {
-        background-color: #000;
-      }
-
-      footer {
-        color: #373030;
-        text-align: center;
-        padding: 10px 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+      .dress-image img {
+        width: 7cm;
+        /* max-width: 100%; */
+        height: auto;
       }
     </style>
   </head>
@@ -138,51 +39,159 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="files/templates/dresses.html">Dresses</a></li>
-          <li><a href="files/templates/about.html">About</a></li>
-          <li><a href="files/templates/contact.html">Contact</a></li>
-          <li><a href="files/templates/cart.html">Cart</a></li>
+          <li><a href="dresses.html">Dresses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or inquiries, feel free to get in touch with
-        us. We're here to assist you in any way we can.
-      </p>
-      <p>
-        IndiGlam is committed to providing you with the finest selection of
-        ethical Indian dresses. Our team is dedicated to helping you find the
-        perfect dress for your special occasions.
-      </p>
-
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <ul>
-          <li><strong>Email:</strong> info@indiglam.com</li>
-          <li><strong>Phone:</strong> +1-123-456-7890</li>
-          <li><strong>Address:</strong> 619 Star Avenue, Pune, India</li>
-        </ul>
+    <div class="dress-menu">
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/hot-girl-showing-her-traditional-designer-dress-blue-theme-location-fashion-shoot_658768-487.jpg?w=360"
+            alt="Dress 1"
+          />
+        </div>
+        <h3>Ethnic Dress 1</h3>
+        <p>Description of Dress 1.</p>
+        <p>Price: &#8377;899</p>
       </div>
 
-      <div class="contact-form">
-        <h3>Contact Form</h3>
-        <form action="submit_contact_form.py" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/attractive-young-girl-wearing-floral-cyan-desi-dress-fashion-shoot-beautiful-location_658768-563.jpg?w=360"
+            alt="Dress 2"
+          />
+        </div>
+        <h3>Ethnic Dress 2</h3>
+        <p>Description of Dress 2.</p>
+        <p>Price: &#8377;1199</p>
       </div>
-    </section>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/beautiful-hot-pakistani-fashion-model-portrait-wearing-traditional-designer-dress_658768-512.jpg?w=360"
+            alt="Dress 3"
+          />
+        </div>
+        <h3>Ethnic Dress 3</h3>
+        <p>Description of Dress 3.</p>
+        <p>Price: &#8377;799</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/cute-girl-fully-dress-up-photoshoot-wearing-trendy-floral-dress-traditional-place_658768-476.jpg?w=360"
+            alt="Dress 4"
+          />
+        </div>
+        <h3>Ethnic Dress 4</h3>
+        <p>Description of Dress 4.</p>
+        <p>Price: &#8377;899</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/cute-girl-posing-with-attitude-hut-park-wearing-traditional-stylish-dress-photoshoot_658768-573.jpg?w=360"
+            alt="Dress 5"
+          />
+        </div>
+        <h3>Ethnic Dress 5</h3>
+        <p>Description of Dress 5.</p>
+        <p>Price: &#8377;999</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/cute-girl-holding-dupatta-with-attitude-fashion-shoot-street-walled-city-lahore_658768-519.jpg?w=360"
+            alt="Dress 6"
+          />
+        </div>
+        <h3>Ethnic Dress 6</h3>
+        <p>Description of Dress 6.</p>
+        <p>Price: &#8377;1299</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/asian-young-girl-portrait-waving-dupatta-wearing-desi-dress-fashion-shoot_658768-611.jpg?w=360"
+            alt="Dress 7"
+          />
+        </div>
+        <h3>Ethnic Dress 7</h3>
+        <p>Description of Dress 7.</p>
+        <p>Price: &#8377;699</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/blushing-young-girl-posing-with-attitude-wearing-cyan-desi-dress-photoshoot-beautiful-indoor_658768-508.jpg?w=360"
+            alt="Dress 8"
+          />
+        </div>
+        <h3>Ethnic Dress 8</h3>
+        <p>Description of Dress 8.</p>
+        <p>Price: &#8377;899</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-wearing-traditional-full-dress-photoshoot-ancient-place_658768-552.jpg?w=360"
+            alt="Dress 9"
+          />
+        </div>
+        <h3>Ethnic Dress 9</h3>
+        <p>Description of Dress 9.</p>
+        <p>Price: &#8377;1099</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/hot-model-girl-posing-front-blue-wooden-door-wearing-traditional-dress-fashion-photoshoot_658768-546.jpg?w=360"
+            alt="Dress 10"
+          />
+        </div>
+        <h3>Ethnic Dress 10</h3>
+        <p>Description of Dress 10.</p>
+        <p>Price: &#8377;799</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/hot-asian-girl-posing-with-attitude-wearing-traditional-shalwar-kameez-fashion-shoot_658768-485.jpg?w=360"
+            alt="Dress 11"
+          />
+        </div>
+        <h3>Ethnic Dress 11</h3>
+        <p>Description of Dress 11.</p>
+        <p>Price: &#8377;1199</p>
+      </div>
+
+      <div class="dress-item">
+        <div class="dress-image">
+          <img
+            src="https://img.freepik.com/premium-photo/cute-girl-wearing-traditional-desi-dress-photoshoot-front-old-wood-door_658768-524.jpg?w=360"
+            alt="Dress 12"
+          />
+        </div>
+        <h3>Ethnic Dress 12</h3>
+        <p>Description of Dress 12.</p>
+        <p>Price: &#8377;999</p>
+      </div>
+    </div>
 
     <footer>
       <p>&copy; 2023 IndiGlam</p>
