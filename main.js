@@ -26,6 +26,8 @@ function navigateToPage(pageUrl) {
     window.location.href = pageUrl;
 }
 
+// slider function
+
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector(".slider");
     const imgWidth = document.querySelector(".img").offsetWidth;
