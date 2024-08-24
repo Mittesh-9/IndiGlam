@@ -35,7 +35,7 @@ To run this website locally or contribute to its development, follow these steps
 
 ## Support and Contact
 
-- Website: [IndiGlam](https://www.indiglam.com)
+- Website: [IndiGlam](mittesh-9.netlify.app/)
 - Email: contact@indiglam.com
 - Follow us on [Instagram](https://www.instagram.com/indiglam) and [Facebook](https://www.facebook.com/indiglam)
 
